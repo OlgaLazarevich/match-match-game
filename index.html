@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Match-match-game</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+   <form name=MyForm>    
+	<input name=stopwatch size=10 value="00:00:00.00" id='clock' class="clock">   
+	<div class="clock-wrap"></div>
+</form>
+    <div id="main" class="main">
+        <div class="introduse" id="introduse">
+            <img src="./img/logo.png" alt="">
+            <p>Greetings! Are you ready to become the king of cards? Excellent! Before you start the game you need to choose a cover for cards and the level of the game. During the game you need to search the pairs of cards. That's all. Good luck.</p>
+            <div class="rule">
+                <section class="name">
+                    <div class="input-game"><input id="first-Name" placeholder="First name"> First name</div>
+                    <div class="input-game"><input id="last-Name" placeholder="Last Name"> Last Name</div>
+                    <div class="input-game"><input id="email" placeholder="Email"> Email</div>
+                </section>
+                <section class="choose">
+                    <label class="label">Cover:</label>
+                    <div class="wrap-label">
+                       <label><input type="radio" name="cover" value="1" class='in1' checked></label>
+                        <label><input type="radio" name="cover" value="2" class='in2'></label>
+                        <label><input type="radio" name="cover" value="3" class='in3'></label>
+                    </div>
+                    <label class="label">Level:</label><br>
+                    <div class="wrap-label">
+                        <label><input type="radio" name="level" value="6" class='in1'></label>
+                        <label><input type="radio" name="level" value="8" class='in2'></label>
+                        <label><input type="radio" name="level" value="12" class='in3' checked></label>
+                    </div>
+                </section>
+                <button id='button' class='button'>PLAY</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
